@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"frontend\\docs\" /s)",
+      "Bash(tree frontenddocs)",
+      "Bash(powershell \"Get-ChildItem -Recurse frontend\\docs\")",
+      "Bash(npm run build)",
+      "Bash(npx docusaurus build --skip-plugins)",
+      "Bash(git fetch --all --prune)",
+      "Bash(.specify/scripts/powershell/create-new-feature.ps1 -Json \"i had already set up a docusaurus project and wrote its content.now i want enhance the ui according to the robotics theme. please make it professional, consistent nd engaging ui. moreover select the font accordint the robotic theme\" -Json -Number 1 -ShortName \"ui-robotics-theme\" \"Enhance UI with robotics theme\")",
+      "Bash(.specify/scripts/bash/create-new-feature.sh -Json \"i had already set up a docusaurus project and wrote its content.now i want enhance the ui according to the robotics theme. please make it professional, consistent nd engaging ui. moreover select the font accordint the robotic theme\" --json --number 1 --short-name \"ui-robotics-theme\" \"Enhance UI with robotics theme\")",
+      "Bash(git checkout -b 1-ui-robotics-theme)"
+    ]
+  }
+}
