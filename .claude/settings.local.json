@@ -9,7 +9,18 @@
       "Bash(git fetch --all --prune)",
       "Bash(.specify/scripts/powershell/create-new-feature.ps1 -Json \"i had already set up a docusaurus project and wrote its content.now i want enhance the ui according to the robotics theme. please make it professional, consistent nd engaging ui. moreover select the font accordint the robotic theme\" -Json -Number 1 -ShortName \"ui-robotics-theme\" \"Enhance UI with robotics theme\")",
       "Bash(.specify/scripts/bash/create-new-feature.sh -Json \"i had already set up a docusaurus project and wrote its content.now i want enhance the ui according to the robotics theme. please make it professional, consistent nd engaging ui. moreover select the font accordint the robotic theme\" --json --number 1 --short-name \"ui-robotics-theme\" \"Enhance UI with robotics theme\")",
-      "Bash(git checkout -b 1-ui-robotics-theme)"
+      "Bash(git checkout -b 1-ui-robotics-theme)",
+      "WebSearch",
+      "Bash(.specify/scripts/powershell/update-agent-context.ps1 -AgentType claude)",
+      "Bash(.specify/scripts/powershell/check-prerequisites.ps1 -Json)",
+      "Bash(tree .specify)",
+      "Bash(.specify/scripts/powershell/check-prerequisites.ps1 -Json -RequireTasks -IncludeTasks)",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -File \".specify/scripts/powershell/check-prerequisites.ps1\" -Json -RequireTasks -IncludeTasks)",
+      "Bash(if [ -d \"specs/1-ui-robotics-theme/checklists\" ])",
+      "Bash(then ls \"specs/1-ui-robotics-theme/checklists\")",
+      "Bash(else echo \"No checklists directory found\")",
+      "Bash(fi)",
+      "Bash(git rev-parse --git-dir)"
     ]
   }
 }

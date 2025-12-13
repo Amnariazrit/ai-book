@@ -1,30 +1,46 @@
 /**
+ * Robotics Theme CSS
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
+/* Import component styles */
+@import 'components.css';
+
+/* Robotics-themed color palette */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #2A4D69; /* Metallic blue */
+  --ifm-color-primary-dark: #213D54; /* Darker metallic */
+  --ifm-color-primary-darker: #1D364A; /* Even darker */
+  --ifm-color-primary-darkest: #152736; /* Darkest metallic */
+  --ifm-color-primary-light: #336383; /* Light metallic */
+  --ifm-color-primary-lighter: #3D7292; /* Lighter metallic */
+  --ifm-color-primary-lightest: #5A8FB0; /* Lightest metallic */
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(42, 77, 105, 0.3);
+
+  /* Additional robotics theme colors */
+  --robotics-accent: #00BCD4; /* Electric blue */
+  --robotics-secondary: #4B6584; /* Tech gray */
+  --robotics-background: #F5F7FA; /* Light background */
+  --robotics-dark-bg: #1A1F25; /* Dark background */
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark mode robotics theme */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #4CAFED; /* Brighter blue in dark mode */
+  --ifm-color-primary-dark: #2196F3;
+  --ifm-color-primary-darker: #1E88E5;
+  --ifm-color-primary-darkest: #1565C0;
+  --ifm-color-primary-light: #64B5F6;
+  --ifm-color-primary-lighter: #90CAF9;
+  --ifm-color-primary-lightest: #BBDEFB;
+  --docusaurus-highlighted-code-line-bg: rgba(66, 133, 244, 0.3);
+
+  /* Dark mode specific colors */
+  --robotics-accent: #00BCD4;
+  --robotics-secondary: #64748B;
+  --robotics-background: #1A1F25;
+  --robotics-dark-bg: #0F1215;
 }

@@ -1,11 +1,26 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 4rem 0;
   width: 100%;
+  background-color: var(--robotics-background);
 }
 
 .featureSvg {
   height: 200px;
   width: 200px;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease;
+}
+
+.featureSvg:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.robotIcon {
+  transition: all 0.3s ease;
+}
+
+.robotIcon:hover {
+  fill: var(--robotics-accent);
 }
